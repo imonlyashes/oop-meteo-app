@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    background-image: url('../img/quebec.jpg');
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+}
+
+h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(26, 26, 26, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 3px 3px 3px rgb(26, 26, 26, 0.2);
+}
+
+h3 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.meteo-container {
+    width: 90vw;
+    margin: -130px auto 30px;
+    background-color: #1a1a1a;
+    padding: 15px;
+    text-align: left;
+}
+
+.meteo-actuelle, .meteo-aujourdhui {
+    width: 100%;
+    background-color: #2d2d2d;
+    padding: 15px;
+}
+
+.meteo-actuelle {
+    margin-bottom: 20px;
+}
+
+.meteo-actuelle div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.meteo-actuelle p {
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0;
+}
+
+#meteoIcon {
+    width: 150px;
+}
+
+.meteo-aujourdhui p {
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 0;
+}
+
+/* Offcanvas */
+.bi-gear-fill{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-shadow: 3px 3px 3px rgb(26, 26, 26, 0.2);
+    transition: color .3s ease-in-out;
+}
+
+.bi-gear-fill:hover {
+    color: #2e2e2e;
+    transition: color .3s ease-in-out;
+}
+
+.offcanvas-title {
+    text-transform: uppercase;
+}
+
+.offcanvas-body select {
+    margin-bottom: 30px;
+}
+
+.form-switch {
+    margin-bottom: 10px;
+}
+
+.form-switch:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 780px) {
+    h1 {
+        font-size: 6em;
+    }
+
+    .meteo-container {
+        margin: -80px auto 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .meteo-actuelle, .meteo-aujourdhui {
+        width: 49%;
+    }
+
+    .meteo-actuelle {
+        margin-bottom: 0;
+    }
+
+    .meteo-aujourdhui p {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 8em;
+    }
+
+    h2 {
+        font-size: 3.5em;
+    }
+
+    h3 {
+        font-size: 2.5em;
+    }
+
+    .meteo-container {
+        width: 60vw;
+        max-width: 1200px;
+    }
+
+    .meteo-aujourdhui p {
+        font-size: 1.5em;
+    }
+}
